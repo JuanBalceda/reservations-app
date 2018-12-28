@@ -1,2 +1,2 @@
-# sales-app
-Spring Boot sales project - API REST
+# reservations-app
+Spring Boot reservations project - API REST
