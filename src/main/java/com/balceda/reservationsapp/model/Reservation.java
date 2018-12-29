@@ -31,6 +31,7 @@ public class Reservation {
 	@Temporal(TemporalType.DATE)
 	private Date dateOut;
 
+	private String idCode;
 	private String peopleAmount;
 	private String description;
 	private String status;

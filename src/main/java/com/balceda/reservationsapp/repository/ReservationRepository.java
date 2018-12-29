@@ -14,4 +14,5 @@ public interface ReservationRepository extends JpaRepository<Reservation, String
 	@Query("Select r from Reservation r where r.dateIn=:in and r.dateOut=:out")
 	public List<Reservation> find(@Param("in") Date dateIn, @Param("out") Date dateOut);
 
+	public Reservation findByIdCode(String idCode);
 }
