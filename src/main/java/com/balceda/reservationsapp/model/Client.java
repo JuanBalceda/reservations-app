@@ -16,7 +16,6 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "client")
-@NamedQuery(name = "Client.findByIdNumber", query = "select c from Client c where c.idNumber = ?1")
 public class Client {
 
 	@Id

@@ -15,7 +15,6 @@ public class ClientService {
 	private final ClientRepository clientRepository;
 
 	public ClientService(ClientRepository clientRepository) {
-		super();
 		this.clientRepository = clientRepository;
 	}
 
@@ -48,5 +47,9 @@ public class ClientService {
 
 	public Client findByIdNumber(String idNumber) {
 		return this.clientRepository.findByIdNumber(idNumber);
+	}
+
+	public List<Client> findAll() {
+		return this.clientRepository.findAll();
 	}
 }
